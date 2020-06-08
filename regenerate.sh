@@ -9,7 +9,7 @@ cd resources/client_gen
 cd ../../
 
 echo Cleaning Cassandra Sidecar Go client
-rm -fr ${wv_tmp_dir}/nifi/.swagger-codegen \
+rm -fr ${wv_tmp_dir}/cassandrasidecar/.swagger-codegen \
   && rm -fr ${wv_tmp_dir}/cassandrasidecar/.gitignore \
   && rm -fr ${wv_tmp_dir}/cassandrasidecar/.swagger-codegen-ignore \
   && rm -fr ${wv_tmp_dir}/cassandrasidecar/.travis.yml \

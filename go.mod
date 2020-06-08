@@ -1,4 +1,4 @@
-module github.com/erdrix/nigoapi
+module github.com/erdrix/cassandrasidecar-go-client
 
 go 1.13
 
