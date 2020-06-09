@@ -16,6 +16,8 @@ import (
 	"net/http"
 	"net/url"
 	"strings"
+
+    "github.com/antihax/optional"
 )
 
 // Linger please
@@ -24,7 +26,8 @@ var (
 )
 
 type ConfigApiService service
-/*
+
+/* 
 ConfigApiService returns configuration of a Cassandra node as in its cassandra.yaml file
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 

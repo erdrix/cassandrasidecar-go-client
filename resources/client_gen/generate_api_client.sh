@@ -20,6 +20,8 @@ export wv_codegen_url=https://repo1.maven.org/maven2/io/swagger/codegen/v3/swagg
 
 export wv_swagger_def=$(ls ${wv_api_def_dir} | grep ${wv_client_name} | sort -V | tail -1)
 
+echo "trest :${wv_swagger_def}"
+
 echo Prepping Workspace
 mkdir -p ${wv_tmp_dir}
 echo "{ \"packageName\": \"${wv_client_name}\" }" > ${wv_tmp_dir}/${wv_client_name}.conf.json
@@ -33,6 +35,6 @@ java -jar ${wv_tmp_dir}/${wv_codegen_filename} generate \
     --config ${wv_tmp_dir}/${wv_client_name}.conf.json \
     --api-package apis \
     --model-package models \
+    --template-dir ${wv_mustache_dir} \
     --input-spec ${wv_api_def_dir}/${wv_swagger_def} \
     --output ${wv_client_dir}
-#    --template-dir ${wv_mustache_dir} \

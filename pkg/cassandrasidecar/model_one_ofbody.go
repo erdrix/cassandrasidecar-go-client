@@ -10,17 +10,4 @@
 package cassandrasidecar
 
 type OneOfbody struct {
-    CleanupOperationRequest
-    DecommissionOperationRequest
-    DrainOperationRequest
-    FlushOperationRequest
-    RebuildOperationRequest
-    RefreshOperationRequest
-    RestartOperationRequest
-    ScrubOperationRequest
-    UpgradeSsTablesOperationRequest
-    ImportOperationRequest
-    TruncateOperationRequest
-    BackupOperationRequest
-    RestoreOperationRequest
 }
