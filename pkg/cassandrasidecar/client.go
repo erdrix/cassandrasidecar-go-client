@@ -33,8 +33,8 @@ import (
 )
 
 var (
-	jsonCheck = regexp.MustCompile("(?i:(?:application|text)/json)")
-	xmlCheck  = regexp.MustCompile("(?i:(?:application|text)/xml)")
+	jsonCheck = regexp.MustCompile("(?i:[application|text]/json)")
+	xmlCheck  = regexp.MustCompile("(?i:[application|text]/xml)")
 )
 
 // APIClient manages communication with the Instaclustr Cassandra Sidecar API v1.1.0

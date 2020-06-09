@@ -16,7 +16,6 @@ import (
 	"net/http"
 	"net/url"
 	"strings"
-
 	"fmt"
 
 	"github.com/antihax/optional"
@@ -28,8 +27,7 @@ var (
 )
 
 type OperationsApiService service
-
-/* 
+/*
 OperationsApiService All operations of Sidecar
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param optional nil or *OperationsApiOperationsGetOpts - Optional Parameters:
@@ -109,8 +107,7 @@ func (a *OperationsApiService) OperationsGet(ctx context.Context, localVarOption
 
 	return localVarHttpResponse, nil
 }
-
-/* 
+/*
 OperationsApiService abc
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param operationId ID of operation to return
@@ -177,8 +174,7 @@ func (a *OperationsApiService) OperationsOperationIdGet(ctx context.Context, ope
 
 	return localVarHttpResponse, nil
 }
-
-/* 
+/*
 OperationsApiService Submits an operation to this Sidecar
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param optional nil or *OperationsApiOperationsPostOpts - Optional Parameters:
@@ -207,7 +203,7 @@ func (a *OperationsApiService) OperationsPost(ctx context.Context, localVarOptio
 	localVarFormParams := url.Values{}
 
 	// to determine the Content-Type header
-	localVarHttpContentTypes := []string{"application/json", }
+	localVarHttpContentTypes := []string{"application/json"}
 
 	// set Content-Type header
 	localVarHttpContentType := selectHeaderContentType(localVarHttpContentTypes)
@@ -216,7 +212,7 @@ func (a *OperationsApiService) OperationsPost(ctx context.Context, localVarOptio
 	}
 
 	// to determine the Accept header
-	localVarHttpHeaderAccepts := []string{"application/json", }
+	localVarHttpHeaderAccepts := []string{"application/json"}
 
 	// set Accept header
 	localVarHttpHeaderAccept := selectHeaderAccept(localVarHttpHeaderAccepts)
@@ -226,10 +222,7 @@ func (a *OperationsApiService) OperationsPost(ctx context.Context, localVarOptio
 	// body params
 	if localVarOptionals != nil && localVarOptionals.Body.IsSet() {
 		
-		localVarOptionalBody, localVarOptionalBodyok := localVarOptionals.Body.Value().(Body)
-		if !localVarOptionalBodyok {
-				return localVarReturnValue, nil, reportError("body should be Body")
-		}
+		localVarOptionalBody:= localVarOptionals.Body.Value()
 		localVarPostBody = &localVarOptionalBody
 	}
 	r, err := a.client.prepareRequest(ctx, localVarPath, localVarHttpMethod, localVarPostBody, localVarHeaderParams, localVarQueryParams, localVarFormParams, localVarFileName, localVarFileBytes)

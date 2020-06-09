@@ -16,7 +16,6 @@ import (
 	"net/http"
 	"net/url"
 	"strings"
-
 )
 
 // Linger please
@@ -25,8 +24,7 @@ var (
 )
 
 type VersionApiService service
-
-/* 
+/*
 VersionApiService returns version of Cassandra node
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 @return CassandraVersion
@@ -57,7 +55,7 @@ func (a *VersionApiService) VersionCassandraGet(ctx context.Context) (CassandraV
 	}
 
 	// to determine the Accept header
-	localVarHttpHeaderAccepts := []string{"application/json", }
+	localVarHttpHeaderAccepts := []string{"application/json"}
 
 	// set Accept header
 	localVarHttpHeaderAccept := selectHeaderAccept(localVarHttpHeaderAccepts)
@@ -108,8 +106,7 @@ func (a *VersionApiService) VersionCassandraGet(ctx context.Context) (CassandraV
 
 	return localVarReturnValue, localVarHttpResponse, nil
 }
-
-/* 
+/*
 VersionApiService returns version of Cassandra Sidecar itself
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 @return SidecarVersion
@@ -140,7 +137,7 @@ func (a *VersionApiService) VersionGet(ctx context.Context) (SidecarVersion, *ht
 	}
 
 	// to determine the Accept header
-	localVarHttpHeaderAccepts := []string{"application/json", }
+	localVarHttpHeaderAccepts := []string{"application/json"}
 
 	// set Accept header
 	localVarHttpHeaderAccept := selectHeaderAccept(localVarHttpHeaderAccepts)
@@ -191,8 +188,7 @@ func (a *VersionApiService) VersionGet(ctx context.Context) (SidecarVersion, *ht
 
 	return localVarReturnValue, localVarHttpResponse, nil
 }
-
-/* 
+/*
 VersionApiService returns schema version this Cassandra node is on, same as calling StorageServiceMBean#getSchemaVersion
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 @return CassandraSchemaVersion
@@ -223,7 +219,7 @@ func (a *VersionApiService) VersionSchemaGet(ctx context.Context) (CassandraSche
 	}
 
 	// to determine the Accept header
-	localVarHttpHeaderAccepts := []string{"application/json", }
+	localVarHttpHeaderAccepts := []string{"application/json"}
 
 	// set Accept header
 	localVarHttpHeaderAccept := selectHeaderAccept(localVarHttpHeaderAccepts)
@@ -284,8 +280,7 @@ func (a *VersionApiService) VersionSchemaGet(ctx context.Context) (CassandraSche
 
 	return localVarReturnValue, localVarHttpResponse, nil
 }
-
-/* 
+/*
 VersionApiService alias for /version endpoint, returns version of Cassandra Sidecar itself
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 @return SidecarVersion
@@ -316,7 +311,7 @@ func (a *VersionApiService) VersionSidecarGet(ctx context.Context) (SidecarVersi
 	}
 
 	// to determine the Accept header
-	localVarHttpHeaderAccepts := []string{"application/json", }
+	localVarHttpHeaderAccepts := []string{"application/json"}
 
 	// set Accept header
 	localVarHttpHeaderAccept := selectHeaderAccept(localVarHttpHeaderAccepts)
