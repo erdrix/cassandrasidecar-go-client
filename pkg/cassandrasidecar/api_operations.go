@@ -17,8 +17,9 @@ import (
 	"net/url"
 	"strings"
 
-    "github.com/antihax/optional"
 	"fmt"
+
+	"github.com/antihax/optional"
 )
 
 // Linger please
