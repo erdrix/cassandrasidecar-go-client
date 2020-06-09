@@ -3,8 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="24bb264d-44c6-40f9-8ac0-d07c30cce82b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/cassandrasidecar/api_config.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/cassandrasidecar/api_config.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pkg/cassandrasidecar/api_operations.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/cassandrasidecar/api_operations.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/client_gen/swagger_templates/api.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/resources/client_gen/swagger_templates/api.mustache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/cassandrasidecar/api_status.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/cassandrasidecar/api_status.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/cassandrasidecar/api_version.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/cassandrasidecar/api_version.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/cassandrasidecar/client.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/cassandrasidecar/client.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/cassandrasidecar/docs/OperationsApi.md" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/cassandrasidecar/docs/OperationsApi.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/cassandrasidecar/model_one_ofbody.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/cassandrasidecar/model_one_ofbody.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/cassandrasidecar/model_one_ofinline_response_200.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/cassandrasidecar/model_one_ofinline_response_200.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/cassandrasidecar/model_restore_operation_response.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/cassandrasidecar/model_restore_operation_response.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/client_gen/generate_api_client.sh" beforeDir="false" afterPath="$PROJECT_DIR$/resources/client_gen/generate_api_client.sh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +70,7 @@
       <option name="presentableId" value="Default" />
       <updated>1591630410870</updated>
       <workItem from="1591630416822" duration="3917000" />
-      <workItem from="1591714534476" duration="1389000" />
+      <workItem from="1591714534476" duration="2125000" />
     </task>
     <servers />
   </component>

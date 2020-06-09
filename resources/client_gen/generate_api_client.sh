@@ -35,6 +35,5 @@ java -jar ${wv_tmp_dir}/${wv_codegen_filename} generate \
     --config ${wv_tmp_dir}/${wv_client_name}.conf.json \
     --api-package apis \
     --model-package models \
-    --template-dir ${wv_mustache_dir} \
     --input-spec ${wv_api_def_dir}/${wv_swagger_def} \
     --output ${wv_client_dir}

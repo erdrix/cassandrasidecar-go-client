@@ -14,11 +14,15 @@ All operations of Sidecar
 
 ### Required Parameters
 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
  **optional** | ***OperationsApiOperationsGetOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
 Optional parameters are passed through a pointer to a OperationsApiOperationsGetOpts struct
-
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **type_** | [**optional.Interface of []string**](string.md)| type of operations to filter on | 
  **status** | [**optional.Interface of []string**](string.md)| status of operations to filter on | 
 
@@ -43,6 +47,9 @@ abc
 
 ### Required Parameters
 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
   **operationId** | [**string**](.md)| ID of operation to return | 
 
 ### Return type
@@ -66,11 +73,15 @@ Submits an operation to this Sidecar
 
 ### Required Parameters
 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
  **optional** | ***OperationsApiOperationsPostOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
 Optional parameters are passed through a pointer to a OperationsApiOperationsPostOpts struct
-
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **body** | [**optional.Interface of Body**](Body.md)|  | 
 
 ### Return type

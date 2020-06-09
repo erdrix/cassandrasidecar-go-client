@@ -16,7 +16,6 @@ import (
 	"net/http"
 	"net/url"
 	"strings"
-
 )
 
 // Linger please
@@ -25,8 +24,7 @@ var (
 )
 
 type StatusApiService service
-
-/* 
+/*
 StatusApiService returns a state of a Cassandra node
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 @return CassandraStatus
@@ -57,7 +55,7 @@ func (a *StatusApiService) StatusGet(ctx context.Context) (CassandraStatus, *htt
 	}
 
 	// to determine the Accept header
-	localVarHttpHeaderAccepts := []string{"application/json", }
+	localVarHttpHeaderAccepts := []string{"application/json"}
 
 	// set Accept header
 	localVarHttpHeaderAccept := selectHeaderAccept(localVarHttpHeaderAccepts)

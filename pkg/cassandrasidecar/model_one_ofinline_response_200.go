@@ -10,4 +10,17 @@
 package cassandrasidecar
 
 type OneOfinlineResponse200 struct {
+    CleanupOperationResponse
+    DecommissionOperationResponse
+    DrainOperationResponse
+    FlushOperationResponse
+    RebuildOperationResponse
+    RefreshOperationResponse
+    RestartOperationResponse
+    ScrubOperationResponse
+    UpgradeSsTablesOperationResponse
+    ImportOperationResponse
+    TruncateOperationResponse
+    BackupOperationResponse
+    RestoreOperationResponse
 }
