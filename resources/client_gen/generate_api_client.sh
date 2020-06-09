@@ -16,24 +16,26 @@ export wv_client_dir=${wv_tmp_dir}/${wv_client_name}
 export wv_mustache_dir=./swagger_templates
 export wv_api_def_dir=./api_defs
 
-export wv_codegen_url=https://repo1.maven.org/maven2/io/swagger/codegen/v3/swagger-codegen-cli/3.0.20/${wv_codegen_filename}
+export wv_openapi_yaml_url=https://raw.githubusercontent.com/instaclustr/cassandra-sidecar/master/spec.yaml
+export wv_generator_url=http://api.openapi-generator.tech/api/gen
 
 export wv_swagger_def=$(ls ${wv_api_def_dir} | grep ${wv_client_name} | sort -V | tail -1)
 
-echo "trest :${wv_swagger_def}"
+echo Downloading go client for ${wv_openapi_yaml_url} from ${wv_generator_url}
 
-echo Prepping Workspace
-mkdir -p ${wv_tmp_dir}
-echo "{ \"packageName\": \"${wv_client_name}\" }" > ${wv_tmp_dir}/${wv_client_name}.conf.json
+code=$(curl -X POST "${wv_generator_url}/clients/go" \
+  -H "Accept: */*" \
+  -H "Content-Type: application/json" \
+  -d "{ \"openAPIUrl\": \""${wv_openapi_yaml_url}"\", \"options\": { \"packageName\": \""${wv_client_name}"\", \"packageVersion\": \"1.0.0\" }}" | jq --raw-output '.code')
+
 
 echo Downloading ${wv_codegen_filename}
-wget -N ${wv_codegen_url} -P ${wv_tmp_dir}
 
-echo Generating into ${wv_client_dir}
-java -jar ${wv_tmp_dir}/${wv_codegen_filename} generate \
-    --lang go \
-    --config ${wv_tmp_dir}/${wv_client_name}.conf.json \
-    --api-package apis \
-    --model-package models \
-    --input-spec ${wv_api_def_dir}/${wv_swagger_def} \
-    --output ${wv_client_dir}
+mkdir tmp
+wget "${wv_generator_url}/download/${code}" -P tmp
+rm -fr ${wv_client_dir}
+unzip "tmp/${code}" -d ${wv_client_dir}
+
+rm -fr tmp
+
+
