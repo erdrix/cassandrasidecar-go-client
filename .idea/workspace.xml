@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="24bb264d-44c6-40f9-8ac0-d07c30cce82b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/NOTE.MD" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pkg/cassandrasidecar/api_operations.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/cassandrasidecar/api_operations.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pkg/cassandrasidecar/model_restore_operation_response.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/cassandrasidecar/model_restore_operation_response.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
