@@ -186,7 +186,7 @@ type OperationsApiOperationsPostOpts struct {
 	Body optional.Interface
 }
 
-func (a *OperationsApiService) OperationsPost(ctx context.Context, localVarOptionals *OperationsApiOperationsPostOpts, localVarReturnValue *interface{}) (*http.Response, error) {
+func (a *OperationsApiService) OperationsPost(ctx context.Context, localVarOptionals *OperationsApiOperationsPostOpts, localVarReturnValue *optional.Interface) (*http.Response, error) {
 	var (
 		localVarHttpMethod = strings.ToUpper("Post")
 		localVarPostBody   interface{}
