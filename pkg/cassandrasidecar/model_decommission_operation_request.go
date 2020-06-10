@@ -12,6 +12,6 @@ package cassandrasidecar
 // decommissions a Cassandra node 
 type DecommissionOperationRequest struct {
 	Type_ string `json:"type"`
-	// forcibly decommission a node, even if by doing so there will not be enough replicas for responding to requests, this option is relevant only for Cassandra 4.x  and it is not in use for lower versions, defaults to false. 
+	// forcibly decommission a node, even if by doing so there will not be enough replicas for responding to requests, this option is relevant only for Cassandra 4.x and it is not in use for lower versions, defaults to false. 
 	Force bool `json:"force,omitempty"`
 }

@@ -23,6 +23,6 @@ type ScrubOperationRequest struct {
 	SkipCorrupted bool `json:"skipCorrupted,omitempty"`
 	// do not validate columns using column validator, defaults to false 
 	NoValidate bool `json:"noValidate,omitempty"`
-	// Rewrites rows with overflowed expiration date affected by CASSANDRA-14092 with the maximum supported expiration date of  2038-01-19T03:14:06+00:00. The rows are rewritten with the original timestamp incremented by one millisecond to override/supersede any potential tombstone that may have been generated during compaction of the affected rows. 
+	// Rewrites rows with overflowed expiration date affected by CASSANDRA-14092 with the maximum supported expiration date of 2038-01-19T03:14:06+00:00. The rows are rewritten with the original timestamp incremented by one millisecond to override/supersede any potential tombstone that may have been generated during compaction of the affected rows. 
 	ReinsertOverflowedTTL bool `json:"reinsertOverflowedTTL,omitempty"`
 }

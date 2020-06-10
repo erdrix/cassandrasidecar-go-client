@@ -9,7 +9,7 @@
  */
 package cassandrasidecar
 
-// drain a node, this operation will be successful only in case a node is in state NORMAL,  when a node was already drained or it is in the middle of draining, this operation returns immediately. 
+// drain a node, this operation will be successful only in case a node is in state NORMAL, when a node was already drained or it is in the middle of draining, this operation returns immediately. 
 type DrainOperationRequest struct {
 	Type_ string `json:"type"`
 }

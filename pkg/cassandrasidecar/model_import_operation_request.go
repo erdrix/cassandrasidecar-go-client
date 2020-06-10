@@ -9,7 +9,7 @@
  */
 package cassandrasidecar
 
-// object used upon restoration, keyspace and table fields do not need to be set when restoration strategy type is  IMPORT or HARDLINKS as this object will be initialised for each entities entry with right keyspace and table.  'sourceDir' property is used for pointing to a directory where we expect to find downloaded SSTables. This in turn means that  all SSTables and other meta files will be downloaded into this directory (from which they will be fed to CFSMB). All other fields are taken from ColumnFamilyStoreMBean#importNewSSTables. 
+// object used upon restoration, keyspace and table fields do not need to be set when restoration strategy type is IMPORT or HARDLINKS as this object will be initialised for each entities entry with right keyspace and table. 'sourceDir' property is used for pointing to a directory where we expect to find downloaded SSTables. This in turn means that all SSTables and other meta files will be downloaded into this directory (from which they will be fed to CFSMB). All other fields are taken from ColumnFamilyStoreMBean#importNewSSTables. 
 type ImportOperationRequest struct {
 	// has to be set to 'import' 
 	Type_ string `json:"type"`

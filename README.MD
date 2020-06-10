@@ -23,7 +23,7 @@ Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
 *ConfigApi* | [**ConfigGet**](docs/ConfigApi.md#configget) | **Get** /config | returns configuration of a Cassandra node as in its cassandra.yaml file
 *OperationsApi* | [**OperationsGet**](docs/OperationsApi.md#operationsget) | **Get** /operations | All operations of Sidecar
-*OperationsApi* | [**OperationsOperationIdGet**](docs/OperationsApi.md#operationsoperationidget) | **Get** /operations/{operationId} | abc
+*OperationsApi* | [**OperationsOperationIdGet**](docs/OperationsApi.md#operationsoperationidget) | **Get** /operations/{operationId} | gets operation by its ID
 *OperationsApi* | [**OperationsPost**](docs/OperationsApi.md#operationspost) | **Post** /operations | Submits an operation to this Sidecar
 *StatusApi* | [**StatusGet**](docs/StatusApi.md#statusget) | **Get** /status | returns a state of a Cassandra node
 *VersionApi* | [**VersionCassandraGet**](docs/VersionApi.md#versioncassandraget) | **Get** /version/cassandra | returns version of Cassandra node
@@ -54,9 +54,10 @@ Class | Method | HTTP request | Description
  - [FlushOperationResponse](docs/FlushOperationResponse.md)
  - [ImportOperationRequest](docs/ImportOperationRequest.md)
  - [ImportOperationResponse](docs/ImportOperationResponse.md)
- - [InlineResponse200](docs/InlineResponse200.md)
+ - [InlineResponse2001](docs/InlineResponse2001.md)
  - [OneOfbody](docs/OneOfbody.md)
  - [OneOfinlineResponse200](docs/OneOfinlineResponse200.md)
+ - [OneOfinlineResponse2001](docs/OneOfinlineResponse2001.md)
  - [RebuildOperationRequest](docs/RebuildOperationRequest.md)
  - [RebuildOperationResponse](docs/RebuildOperationResponse.md)
  - [RefreshOperationRequest](docs/RefreshOperationRequest.md)

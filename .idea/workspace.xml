@@ -3,7 +3,35 @@
   <component name="ChangeListManager">
     <list default="true" id="24bb264d-44c6-40f9-8ac0-d07c30cce82b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NOTE.MD" beforeDir="false" afterPath="$PROJECT_DIR$/NOTE.MD" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.MD" beforeDir="false" afterPath="$PROJECT_DIR$/README.MD" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/cassandrasidecar/.swagger-codegen/VERSION" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/cassandrasidecar/api/swagger.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/cassandrasidecar/api/swagger.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pkg/cassandrasidecar/api_operations.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/cassandrasidecar/api_operations.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/cassandrasidecar/model_backup_operation_request.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/cassandrasidecar/model_backup_operation_request.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/cassandrasidecar/model_backup_operation_response.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/cassandrasidecar/model_backup_operation_response.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/cassandrasidecar/model_base_operation.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/cassandrasidecar/model_base_operation.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/cassandrasidecar/model_cleanup_operation_response.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/cassandrasidecar/model_cleanup_operation_response.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/cassandrasidecar/model_decommission_operation_request.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/cassandrasidecar/model_decommission_operation_request.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/cassandrasidecar/model_decommission_operation_response.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/cassandrasidecar/model_decommission_operation_response.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/cassandrasidecar/model_drain_operation_request.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/cassandrasidecar/model_drain_operation_request.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/cassandrasidecar/model_drain_operation_response.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/cassandrasidecar/model_drain_operation_response.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/cassandrasidecar/model_flush_operation_response.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/cassandrasidecar/model_flush_operation_response.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/cassandrasidecar/model_import_operation_request.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/cassandrasidecar/model_import_operation_request.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/cassandrasidecar/model_import_operation_response.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/cassandrasidecar/model_import_operation_response.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/cassandrasidecar/model_rebuild_operation_request.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/cassandrasidecar/model_rebuild_operation_request.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/cassandrasidecar/model_rebuild_operation_response.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/cassandrasidecar/model_rebuild_operation_response.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/cassandrasidecar/model_refresh_operation_response.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/cassandrasidecar/model_refresh_operation_response.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/cassandrasidecar/model_restart_operation_request.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/cassandrasidecar/model_restart_operation_request.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/cassandrasidecar/model_restart_operation_response.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/cassandrasidecar/model_restart_operation_response.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/cassandrasidecar/model_restore_operation_request.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/cassandrasidecar/model_restore_operation_request.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/cassandrasidecar/model_restore_operation_response.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/cassandrasidecar/model_restore_operation_response.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/cassandrasidecar/model_scrub_operation_request.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/cassandrasidecar/model_scrub_operation_request.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/cassandrasidecar/model_scrub_operation_response.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/cassandrasidecar/model_scrub_operation_response.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/cassandrasidecar/model_truncate_operation_response.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/cassandrasidecar/model_truncate_operation_response.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/cassandrasidecar/model_upgrade_ss_tables_operation_request.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/cassandrasidecar/model_upgrade_ss_tables_operation_request.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/cassandrasidecar/model_upgrade_ss_tables_operation_response.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/cassandrasidecar/model_upgrade_ss_tables_operation_response.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/client_gen/api_defs/cassandra-sidecar-1.1.0.json" beforeDir="false" afterPath="$PROJECT_DIR$/resources/client_gen/api_defs/cassandrasidecar-1.1.0.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

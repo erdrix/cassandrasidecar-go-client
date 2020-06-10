@@ -9,7 +9,7 @@
  */
 package cassandrasidecar
 
-// rebuilds data by streaming from other nodes,  
+// rebuilds data by streaming from other nodes, 
 type RebuildOperationRequest struct {
 	Type_ string `json:"type"`
 	// specific keyspace to rebuild, if not specified, all keyspaces are rebuilt 
