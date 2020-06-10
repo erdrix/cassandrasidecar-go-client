@@ -179,19 +179,20 @@ OperationsApiService Submits an operation to this Sidecar
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param optional nil or *OperationsApiOperationsPostOpts - Optional Parameters:
      * @param "Body" (optional.Interface of Body) - 
-@return interface{}
+@return Object
 */
 
-type OperationsApiOperationsPostOpts struct { 
+type OperationsApiOperationsPostOpts struct {
 	Body optional.Interface
 }
 
-func (a *OperationsApiService) OperationsPost(ctx context.Context, localVarOptionals *OperationsApiOperationsPostOpts, localVarReturnValue *optional.Interface) (*http.Response, error) {
+func (a *OperationsApiService) OperationsPost(ctx context.Context, localVarOptionals *OperationsApiOperationsPostOpts) (optional.Interface, *http.Response, error) {
 	var (
 		localVarHttpMethod = strings.ToUpper("Post")
 		localVarPostBody   interface{}
 		localVarFileName   string
 		localVarFileBytes  []byte
+		localVarReturnValue optional.Interface
 	)
 
 	// create path and map variables
@@ -220,31 +221,31 @@ func (a *OperationsApiService) OperationsPost(ctx context.Context, localVarOptio
 	}
 	// body params
 	if localVarOptionals != nil && localVarOptionals.Body.IsSet() {
-		
+
 		localVarOptionalBody:= localVarOptionals.Body.Value()
 		localVarPostBody = &localVarOptionalBody
 	}
 	r, err := a.client.prepareRequest(ctx, localVarPath, localVarHttpMethod, localVarPostBody, localVarHeaderParams, localVarQueryParams, localVarFormParams, localVarFileName, localVarFileBytes)
 	if err != nil {
-		return nil, err
+		return localVarReturnValue, nil, err
 	}
 
 	localVarHttpResponse, err := a.client.callAPI(r)
 	if err != nil || localVarHttpResponse == nil {
-		return localVarHttpResponse, err
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	localVarBody, err := ioutil.ReadAll(localVarHttpResponse.Body)
 	localVarHttpResponse.Body.Close()
 	if err != nil {
-		return localVarHttpResponse, err
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarHttpResponse, err
+		if err == nil {
+			return localVarReturnValue, localVarHttpResponse, err
 		}
 	}
 
@@ -254,17 +255,17 @@ func (a *OperationsApiService) OperationsPost(ctx context.Context, localVarOptio
 			error: localVarHttpResponse.Status,
 		}
 		if localVarHttpResponse.StatusCode == 200 {
-			var v interface{}
+			var v optional.Interface
 			err = a.client.decode(&v, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
 				if err != nil {
 					newErr.error = err.Error()
-					return localVarHttpResponse, newErr
+					return localVarReturnValue, localVarHttpResponse, newErr
 				}
 				newErr.model = v
-				return localVarHttpResponse, newErr
+				return localVarReturnValue, localVarHttpResponse, newErr
 		}
-		return localVarHttpResponse, newErr
+		return localVarReturnValue, localVarHttpResponse, newErr
 	}
 
-	return localVarHttpResponse, nil
+	return localVarReturnValue, localVarHttpResponse, nil
 }
