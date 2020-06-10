@@ -47,7 +47,7 @@ type RestoreOperationResponse struct {
 	SchemaVersion string `json:"schemaVersion,omitempty"`
 	// flag saying if we indeed want a schema version of a running node match with schema version a snapshot is taken on. there might be cases when we want to restore a table for which its CQL schema has not changed but it has changed for  other table / keyspace but a schema for that node has changed by doing that. 
 	ExactSchemaVersion bool `json:"exactSchemaVersion,omitempty"`
-	Import_ *Object `json:"import,omitempty"`
+	Import_ *AllOfRestoreOperationRequestImport_ `json:"import,omitempty"`
 	// flag saying that this request is a global one, meaning that a Sidecar this request is sent to will act as a restoration  coordinator sending all other requests to each node in a cluster, for each phase. 
 	GlobalRequest bool `json:"globalRequest,omitempty"`
 	// unique identifier of an operation, a random id is assigned to each operation after  a request is submitted, from caller's perspective, an id is sent back as a response  to his request so he can further query state of that operation, referencing id, by operations/{id} endpoint 

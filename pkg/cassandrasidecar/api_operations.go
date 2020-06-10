@@ -17,6 +17,8 @@ import (
 	"net/url"
 	"strings"
 	"fmt"
+
+	"github.com/antihax/optional"
 )
 
 // Linger please
@@ -177,20 +179,20 @@ OperationsApiService Submits an operation to this Sidecar
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param optional nil or *OperationsApiOperationsPostOpts - Optional Parameters:
      * @param "Body" (optional.Interface of Body) - 
-@return InlineResponse200
+@return interface{}
 */
 
 type OperationsApiOperationsPostOpts struct { 
 	Body optional.Interface
 }
 
-func (a *OperationsApiService) OperationsPost(ctx context.Context, localVarOptionals *OperationsApiOperationsPostOpts) (InlineResponse200, *http.Response, error) {
+func (a *OperationsApiService) OperationsPost(ctx context.Context, localVarOptionals *OperationsApiOperationsPostOpts) (interface{}, *http.Response, error) {
 	var (
 		localVarHttpMethod = strings.ToUpper("Post")
 		localVarPostBody   interface{}
 		localVarFileName   string
 		localVarFileBytes  []byte
-		localVarReturnValue InlineResponse200
+		localVarReturnValue interface{}
 	)
 
 	// create path and map variables
@@ -253,7 +255,7 @@ func (a *OperationsApiService) OperationsPost(ctx context.Context, localVarOptio
 			error: localVarHttpResponse.Status,
 		}
 		if localVarHttpResponse.StatusCode == 200 {
-			var v InlineResponse200
+			var v interface{}
 			err = a.client.decode(&v, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
 				if err != nil {
 					newErr.error = err.Error()
