@@ -56,8 +56,8 @@ type RestoreOperationResponse struct {
 	// state of an operation, operation might be in various states, PENDING - this operation is pending for being submitted. RUNNING - this operation is actively doing its job, COMPLETED - this operation has finished successfully, CANCELLED - this operation was interrupted while being run, FAILED - this operation has finished errorneously 
 	State string `json:"state"`
 	// float from 0.0 to 1.0, 1.0 telling that operation is completed, either successfully or with errors. 
-	Progress string `json:"progress"`
-	// timestamp telling when this operation was created on Sidecar's side 
+	Progress float64 `json:"progress"`
+	// timestamp telling when this operation was created on Sidecar's side
 	CreationTime string `json:"creationTime"`
 	// timestamp telling when this operation was started by Sidecar, if an operation is created, it does not necessarily mean that it will be started right away, in most cases it is the case but if e.g. ExecutorService is full on its working thread, an execution of an operation is postponed and start time is updated only after that 
 	StartTime string `json:"startTime,omitempty"`

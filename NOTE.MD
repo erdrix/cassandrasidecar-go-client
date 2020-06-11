@@ -11,3 +11,4 @@
 
 - Replace `Object` by `AllOfRestoreOperationRequestImport_`
 - Replace `time.Time` by `string`
+- Replace `Progress string` by `Progress float64`
