@@ -65,7 +65,7 @@ type RestoreOperationResponse struct {
 	// timestamp telling when this operation was started by Sidecar, if an operation is created, it does not necessarily mean that it will be started right away, in most cases it is the case but if e.g. ExecutorService is full on its working thread, an execution of an operation is postponed and start time is updated only after that 
 	StartTime string `json:"startTime,omitempty"`
 	// timestamp telling when an operation has finished, irrelevant of its result, an operation can be failed and it would still have this field populated. 
-	CompletionTime time.Time `json:"completionTime,omitempty"`
+	CompletionTime string `json:"completionTime,omitempty"`
 	// This field contains serialized java.lang.Throwable in case this operation has failed 
 	FailureCause *interface{} `json:"failureCause,omitempty"`
 }
