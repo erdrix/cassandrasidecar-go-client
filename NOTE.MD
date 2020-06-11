@@ -10,3 +10,4 @@
 ## model_restore_operation_response.go
 
 - Replace `Object` by `AllOfRestoreOperationRequestImport_`
+- Replace `time.Time` by `string`
