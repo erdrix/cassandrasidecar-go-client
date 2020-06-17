@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="24bb264d-44c6-40f9-8ac0-d07c30cce82b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/pkg/cassandrasidecar/model_backup_operation_response.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/cassandrasidecar/model_backup_operation_response.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/cassandrasidecar/model_backup_operation_request.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/cassandrasidecar/model_backup_operation_request.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,6 +63,7 @@
       <updated>1591630410870</updated>
       <workItem from="1591630416822" duration="2308000" />
       <workItem from="1591875196262" duration="911000" />
+      <workItem from="1592379091998" duration="378000" />
     </task>
     <servers />
   </component>
